@@ -8,14 +8,14 @@
   ]">
    
         
-            <div class="flex flex-col bg-gray-100  md:flex-row md:items-center md:justify-evenly">
+            <div class="flex flex-col bg-gray-100  md:flex-row md:items-center md:justify-evenly ">
                 <img class="w-8 h-8  mb-2   rounded-lg flex items-center justify-center " src="../assets/img/WASL-LOGO-RGB-ICON.png" alt="logo">
 
                  <sidebar-toggle-component  @toggle="toggleSidebar"/>
             </div>
      
         
-        <nav class="mt-8 flex flex-col space-y-2 px-2">
+        <nav class="mt-2 flex flex-col space-y-2 px-2">
             <div class="flex flex-col space-y-1">
           
 <sidebarlinks-component to="/" text="Home"  :isCollapsed="isCollapsed"><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
