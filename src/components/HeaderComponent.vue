@@ -1,9 +1,11 @@
 
 
-<template>
+<template >
 
 
+    
 <NavbarComponent/>
+
 
 </template>
 

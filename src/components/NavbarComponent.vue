@@ -1,5 +1,5 @@
 <template>
- <div class="bg-gray-50 border-b border-gray-200 px-4 py-2 flex items-center justify-between w-full shadow-sm sticky top-0 z-50">
+ <div class= " bg-gray-50 border-b border-gray-200 px-4 py-2 flex items-center justify-between w-full shadow-sm sticky top-0 z-50 ">
   <!-- Left: Notification Icon -->
   <div class="flex items-center text-gray-600 hover:text-gray-800">
     <button>
