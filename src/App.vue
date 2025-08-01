@@ -3,13 +3,17 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import SidebarComponent from './components/SidebarComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+
+
+
 import Donations from './views/Donations.vue';
 import Home from './views/Home.vue';
 
 import ToastComponent from './components/ToastComponent.vue';
 export default {
   components: {
-    HeaderComponent,SidebarComponent, Donations,Home,ToastComponent,FooterComponent
+    HeaderComponent,SidebarComponent, Donations,Home,ToastComponent
+    ,FooterComponent
   }
   ,
 
@@ -17,7 +21,8 @@ export default {
 </script>
 
 <template>
-
+<div  class="min-h-screen flex flex-col">
+  
 <HeaderComponent/>
 
 <ToastComponent/>
@@ -25,4 +30,5 @@ export default {
 <SidebarComponent/>
 
 <FooterComponent/>
+</div>
 </template>
