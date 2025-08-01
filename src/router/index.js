@@ -10,7 +10,7 @@ import Volunteers from "@/views/Volunteers.vue";
 const routes = [
 
     
-{ path: '/Home', name: 'home',component : Home },
+{ path: '/', name: 'home',component : Home },
 { path: '/Donations', name: 'Donations', component: Donations },
  { path: '/Volunteers', name: '/Volunteers', component: Volunteers },
  { path: '/Projects', name: 'Projects', component: Projects },
