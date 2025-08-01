@@ -9,7 +9,7 @@
         <div class="flex items-center mt-2">
           <span
             :class="[
-              'text-sm font-medium flex items-center',
+              'text-sm font-medium flex items-center ',
               percentage >= 0 ? 'text-green-600' : 'text-red-600'
             ]"
           >
@@ -31,10 +31,10 @@
             </svg>
             {{ Math.abs(percentage) }}%
           </span>
-          <span class="text-gray-500 text-sm ml-2">vs last month</span>
+          <span class="text-gray-500 text-sm ml-2"> Joing last month</span>
         </div>
       </div>
-      <div class="w-12 h-12 rounded-lg flex items-center justify-center bg-gray-100">
+      <div class="w-12 h-12 rounded-lg flex items-center justify-center ">
         <slot />
       </div>
     </div>

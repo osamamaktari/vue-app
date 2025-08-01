@@ -1,0 +1,66 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Opening of New Clinic in Sana'a",
+      "date": "2025-07-20"
+    },
+    {
+      "id": 2,
+      "title": "Medical Awareness Campaign",
+      "date": "2025-07-15"
+    },
+    {
+      "id": 3,
+      "title": "Free Eye Checkup Day",
+      "date": "2025-07-10"
+    },
+    {
+      "id": 4,
+      "title": "Mobile Medical Caravan to Taiz",
+      "date": "2025-06-30"
+    },
+    {
+      "id": 5,
+      "title": "Blood Donation Drive",
+      "date": "2025-07-28"
+    },
+    {
+      "id": 6,
+      "title": "Children’s Health Festival",
+      "date": "2025-07-31"
+    }
+  ],
+  "donations": [
+    {
+      "id": 1,
+      "title": "Donation from Al-Amal Foundation",
+      "date": "2025-07-25"
+    },
+    {
+      "id": 2,
+      "title": "500 Medical Kits Donated",
+      "date": "2025-07-18"
+    },
+    {
+      "id": 3,
+      "title": "Anonymous Cash Donation - $10,000",
+      "date": "2025-07-12"
+    },
+    {
+      "id": 4,
+      "title": "Oxygen Machines Donation by UN Agency",
+      "date": "2025-07-29"
+    },
+    {
+      "id": 5,
+      "title": "New Ambulance Donated",
+      "date": "2025-07-30"
+    },
+    {
+      "id": 6,
+      "title": "Donation by Dr. Mohammed - $5,000",
+      "date": "2025-07-31"
+    }
+  ]
+}
