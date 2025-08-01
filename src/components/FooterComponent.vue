@@ -1,0 +1,12 @@
+<template>
+  <footer class="sticky bottom-0 z-50 w-full py-4 px-6 bg-gray-50 text-gray-500 text-sm border-t border-gray-200 flex items-center justify-between">
+    <span>© {{ currentYear }} Wasl Org Dashboard</span>
+    <span class="font-semibold">Eng.Osama Maktari</span>
+<span>🚀 Advanced Dashboard - v1.0</span>
+
+  </footer>
+</template>
+
+<script setup>
+const currentYear = new Date().getFullYear()
+</script>

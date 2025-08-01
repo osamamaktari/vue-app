@@ -20,14 +20,14 @@ onMounted(() => {
   showToast.value = true
   setTimeout(() => {
     showToast.value = false
-  }, 4000) 
+  }, 1500) 
 })
 </script>
 
 <style scoped>
 .fade-enter-active,
 .fade-leave-active {
-  transition: opacity 3s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 .fade-enter-from,
 .fade-leave-to {

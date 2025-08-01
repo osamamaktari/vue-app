@@ -8,8 +8,8 @@
   ]">
    
         
-            <div class="flex flex-col  md:flex-row md:items-center md:justify-evenly">
-                <img class="w-8 h-8 mt-3   bg-white rounded-lg flex items-center justify-center " src="../assets/img/WASL-LOGO-RGB-ICON.png" alt="logo">
+            <div class="flex flex-col bg-gray-100  md:flex-row md:items-center md:justify-evenly">
+                <img class="w-8 h-8  mb-2   rounded-lg flex items-center justify-center " src="../assets/img/WASL-LOGO-RGB-ICON.png" alt="logo">
 
                  <sidebar-toggle-component  @toggle="toggleSidebar"/>
             </div>
@@ -17,12 +17,8 @@
         
         <nav class="mt-8 flex flex-col space-y-2 px-2">
             <div class="flex flex-col space-y-1">
-            <!-- <sidebarlinks-component   :isCollapsed="isCollapsed">
-                <img src="../assets/img/WASL-LOGO-RGB-ICON.png "class="w-8 h-8 bg-white rounded-lg flex items-center justify-center" alt="">
-                 <sidebar-toggle-component   @toggle="toggleSidebar"/>
-            </sidebarlinks-component>
-             -->
-<sidebarlinks-component to="/" text="Home"  :isCollapsed="isCollapsed"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          
+<sidebarlinks-component to="/" text="Home"  :isCollapsed="isCollapsed"><svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg></sidebarlinks-component>
 
