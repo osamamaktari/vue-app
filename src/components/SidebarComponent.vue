@@ -3,7 +3,7 @@
     
  <!-- Sidebar -->
     <div  :class="[
-    'fixed inset-y-0 left-0 bg-cordes-dark shadow-xl mt-17 flex flex-col transition-width duration-300 ease-in-out',
+    'fixed inset-y-0 left-0 bg-cordes-dark shadow-xl mt-15 p-0.5 flex flex-col transition-width duration-300 ease-in-out ',
     isCollapsed ? 'w-16' : 'w-64'
   ]">
    

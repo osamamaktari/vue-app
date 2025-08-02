@@ -53,15 +53,15 @@ const toastClasses = computed(() => {
 const iconClass = computed(() => {
   switch (props.type) {
     case 'success':
-      return '✓'
+      return 'done'
     case 'error':
-      return '✕'
+      return 'cant done'
     case 'warning':
-      return '⚠'
+      return 'its a warrning'
     case 'info':
-      return 'ℹ'
+      return 'information'
     default:
-      return '✓'
+      return 'done'
   }
 })
 </script>

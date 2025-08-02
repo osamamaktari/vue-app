@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Medical Aid for Sana'a",
+    "status": "Completed",
+    "budget": 25000,
+    "impact": "Helped 1,200 patients",
+    "progress": 100,
+    "report": "https://example.com/reports/medical-aid"
+  },
+  {
+    "id": 2,
+    "name": "Clean Water Project",
+    "status": "Ongoing",
+    "budget": 18000,
+    "impact": "Serving 3 villages",
+    "progress": 65,
+    "report": "https://example.com/reports/water"
+  },
+  {
+    "id": 3,
+    "name": "School Supplies Campaign",
+    "status": "Paused",
+    "budget": 8000,
+    "impact": "Reached 500 students",
+    "progress": 40,
+    "report": "https://example.com/reports/schools"
+  },
+  {
+    "id": 4,
+    "name": "Mobile Clinic",
+    "status": "Completed",
+    "budget": 30000,
+    "impact": "Visited 15 rural areas",
+    "progress": 100,
+    "report": "https://example.com/reports/mobile-clinic"
+  },
+  {
+    "id": 5,
+    "name": "Winter Relief Program",
+    "status": "Ongoing",
+    "budget": 12000,
+    "impact": "Distributed 2,000 blankets",
+    "progress": 75,
+    "report": "https://example.com/reports/winter-relief"
+  },
+  {
+    "id": 6,
+    "name": "Orphan Sponsorship",
+    "status": "Completed",
+    "budget": 20000,
+    "impact": "Sponsored 150 orphans",
+    "progress": 100,
+    "report": "https://example.com/reports/orphans"
+  },
+  {
+    "id": 7,
+    "name": "Food Distribution",
+    "status": "Paused",
+    "budget": 10000,
+    "impact": "Fed 5,000 families",
+    "progress": 45,
+    "report": "https://example.com/reports/food"
+  },
+  {
+    "id": 8,
+    "name": "Youth Empowerment",
+    "status": "Ongoing",
+    "budget": 22000,
+    "impact": "Trained 300 young people",
+    "progress": 60,
+    "report": "https://example.com/reports/youth"
+  },
+  {
+    "id": 9,
+    "name": "Mental Health Support",
+    "status": "Completed",
+    "budget": 9000,
+    "impact": "Provided 800 sessions",
+    "progress": 100,
+    "report": "https://example.com/reports/mental-health"
+  },
+  {
+    "id": 10,
+    "name": "Disabled Persons Support",
+    "status": "Ongoing",
+    "budget": 16000,
+    "impact": "Reached 600 individuals",
+    "progress": 70,
+    "report": "https://example.com/reports/disabled"
+  }
+]
