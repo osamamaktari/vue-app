@@ -1,5 +1,5 @@
 <template>
- <div class= " bg-gray-50 border-b border-gray-200 px-4 py-2 flex items-center justify-between w-full shadow-sm sticky top-0 z-50 ">
+ <div class= " bg-blue-300 border-b border-gray-200 px-4 py-2 flex items-center justify-between w-full shadow-sm sticky top-0 z-50 ">
   <!-- Left: Notification Icon -->
   <div class="flex items-center text-gray-600 hover:text-gray-800">
     <button>
@@ -15,7 +15,7 @@
   <div class="flex-1 max-w-md mx-4">
     <div class="relative">
       <input type="text" placeholder="Search..."
-        class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-300 focus:ring-1 focus:ring-blue-400 focus:outline-none" />
+        class="w-full pl-10 pr-4 py-2 rounded-lg border border-gray-50 focus:ring-1 focus:ring-blue-400 focus:outline-none" />
       <div class="absolute inset-y-0 left-0 flex items-center pl-2 text-gray-400">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none"
           viewBox="0 0 24 24" stroke="currentColor">

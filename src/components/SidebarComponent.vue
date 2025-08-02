@@ -3,12 +3,12 @@
     
  <!-- Sidebar -->
     <div  :class="[
-    'fixed inset-y-0 left-0 bg-cordes-dark shadow-xl mt-15 p-0.5 flex flex-col transition-width duration-300 ease-in-out ',
+    'fixed inset-y-0 left-0 bg-white shadow-xl mt-14 p-0.1 flex flex-col transition-width duration-300 ease-in-out z-20',
     isCollapsed ? 'w-16' : 'w-64'
   ]">
    
         
-            <div class="flex flex-col bg-gray-100  md:flex-row md:items-center md:justify-evenly ">
+            <div class="flex flex-col  md:flex-row md:items-center md:justify-evenly ">
                 <img class="w-8 h-8  mb-2   rounded-lg flex items-center justify-center " src="../assets/img/WASL-LOGO-RGB-ICON.png" alt="logo">
 
                  <sidebar-toggle-component  @toggle="toggleSidebar"/>

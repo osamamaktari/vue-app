@@ -1,26 +1,191 @@
 <template>
-  <Bar :data="chartData" :options="chartOptions" />
+  <div class="chart-container">
+    <Bar 
+      v-if="chartData && chartOptions" 
+      :data="chartData" 
+      :options="chartOptions" 
+      :key="chartKey"
+    />
+    <div v-else class="flex items-center justify-center h-full">
+      <div class="text-gray-500">Loading chart...</div>
+    </div>
+  </div>
 </template>
 
 <script setup>
+import { computed, watch, ref } from 'vue'
 import { Bar } from 'vue-chartjs'
 import {
-  Chart as ChartJS, Title, Tooltip, Legend, BarElement,
-  CategoryScale, LinearScale
+  Chart as ChartJS,
+  Title,
+  Tooltip,
+  Legend,
+  BarElement,
+  CategoryScale,
+  LinearScale
 } from 'chart.js'
 
-ChartJS.register(Title, Tooltip, Legend, BarElement, CategoryScale, LinearScale)
 
-const props = defineProps({ data: Array })
+ChartJS.register(
+  Title,
+  Tooltip,
+  Legend,
+  BarElement,
+  CategoryScale,
+  LinearScale
+)
 
-const chartData = {
-  labels: props.data.map(d => d.ageGroup),
-  datasets: [{
-    label: 'Amount',
-    data: props.data.map(d => d.amount),
-    backgroundColor: '#10b981'
-  }]
-}
+// Props
+const props = defineProps({
+  data: {
+    type: Array,
+    required: true,
+    default: () => []
+  }
+})
 
-const chartOptions = { responsive: true, plugins: { legend: { display: false } } }
+
+const chartKey = ref(0)
+
+
+const chartData = computed(() => {
+  if (!props.data || props.data.length === 0) {
+    return null
+  }
+
+  return {
+    labels: props.data.map(item => item.ageGroup),
+    datasets: [
+      {
+        label: 'Donation quantity',
+        data: props.data.map(item => item.amount),
+        backgroundColor: [
+          '#10b981',
+          '#059669',
+          '#047857',
+          '#065f46',
+          '#064e3b'
+        ],
+        borderColor: [
+          '#10b981',
+          '#059669',
+          '#047857',
+          '#065f46',
+          '#064e3b'
+        ],
+        borderWidth: 2,
+        borderRadius: 8,
+        borderSkipped: false,
+        hoverBackgroundColor: [
+          '#34d399',
+          '#10b981',
+          '#059669',
+          '#047857',
+          '#065f46'
+        ],
+        hoverBorderColor: '#ffffff',
+        hoverBorderWidth: 3
+      }
+    ]
+  }
+})
+
+
+const chartOptions = computed(() => ({
+  responsive: true,
+  maintainAspectRatio: false,
+  plugins: {
+    title: {
+      display: false
+    },
+    legend: {
+      display: false
+    },
+    tooltip: {
+      backgroundColor: 'rgba(0, 0, 0, 0.8)',
+      titleColor: '#ffffff',
+      bodyColor: '#ffffff',
+      borderColor: '#10b981',
+      borderWidth: 1,
+      cornerRadius: 8,
+      displayColors: true,
+      callbacks: {
+        title: function(context) {
+          return `Age: ${context[0].label}`
+        },
+        label: function(context) {
+          return `Quantity: ${context.parsed.y.toLocaleString()} usd`
+        }
+      }
+    }
+  },
+  scales: {
+    x: {
+      display: true,
+      title: {
+        display: true,
+        text: 'Age',
+        font: {
+          size: 14,
+          weight: 'bold'
+        }
+      },
+      grid: {
+        display: false
+      },
+      ticks: {
+        font: {
+          size: 12
+        }
+      }
+    },
+    y: {
+      display: true,
+      title: {
+        display: true,
+        text: 'Donation amoun (usd)',
+        font: {
+          size: 14,
+          weight: 'bold'
+        }
+      },
+      grid: {
+        color: 'rgba(0, 0, 0, 0.1)',
+        drawBorder: false
+      },
+      ticks: {
+        font: {
+          size: 12
+        },
+        callback: function(value) {
+          return value.toLocaleString()
+        }
+      },
+      beginAtZero: true
+    }
+  },
+  elements: {
+    bar: {
+      borderWidth: 2
+    }
+  }
+}))
+
+
+watch(() => props.data, (newData) => {
+  if (newData && newData.length > 0) {
+    chartKey.value += 1
+    console.log(' BarChartAge data updated:', newData)
+  }
+}, { deep: true, immediate: true })
 </script>
+
+<style scoped>
+.chart-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  min-height: 300px;
+}
+</style>
+
