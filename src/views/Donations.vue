@@ -1,5 +1,5 @@
 <template>
-<DonationsView class="ml-11 md:ml-69 min-h-screen px-6 py-8"/>
+<DonationsView class="ml-11 md:ml-69 min-h-screen px-6 py-8 bg-white"/>
 </template>
 <script >
 import DonationsView from '@/components/Donations/DonationsView.vue';
