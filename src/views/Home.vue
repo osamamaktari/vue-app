@@ -2,7 +2,7 @@
 <template>
   
         <!-- Main Dashboard Content -->
-        <main class="  p-4 sm:p-6 transition-all duration-300" :class="{ 'ml-64':sidebarOpen}">
+        <main class="  p-4 sm:p-6 transition-all duration-300  ml-11 md:ml-69" >
             
             <div  class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
             

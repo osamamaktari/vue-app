@@ -1,0 +1,41 @@
+{
+  "donorGrowth": [
+    { "month": "Jan", "count": 50 },
+    { "month": "Feb", "count": 70 },
+    { "month": "Mar", "count": 110 },
+    { "month": "Apr", "count": 160 },
+    { "month": "May", "count": 200 },
+    { "month": "Jun", "count": 240 },
+    { "month": "Jul", "count": 300 },
+    { "month": "Aug", "count": 340 },
+    { "month": "Sep", "count": 390 },
+    { "month": "Oct", "count": 420 },
+    { "month": "Nov", "count": 460 },
+    { "month": "Dec", "count": 500 }
+  ],
+  "donationByAge": [
+    { "ageGroup": "18-25", "amount": 7000 },
+    { "ageGroup": "26-35", "amount": 12000 },
+    { "ageGroup": "36-50", "amount": 9200 },
+    { "ageGroup": "51-65", "amount": 5400 },
+    { "ageGroup": "65+", "amount": 3200 }
+  ],
+  "donationByRegion": [
+    { "region": "Sana'a", "amount": 14000 },
+    { "region": "Aden", "amount": 10000 },
+    { "region": "Taiz", "amount": 7000 },
+    { "region": "Hadramout", "amount": 6000 },
+    { "region": "Ibb", "amount": 5000 }
+  ],
+  "visitorStats": [
+    { "name": "Bounce Rate", "value": 45 },
+    { "name": "Visited Pages", "value": 55 }
+  ],
+  "topVisitedPages": [
+    { "page": "/home", "visits": 500 },
+    { "page": "/donate", "visits": 400 },
+    { "page": "/projects", "visits": 350 },
+    { "page": "/about", "visits": 250 },
+    { "page": "/contact", "visits": 200 }
+  ]
+}

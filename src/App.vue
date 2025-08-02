@@ -11,12 +11,15 @@ import Donations from './views/Donations.vue';
 import Home from './views/Home.vue';
 import Volunteers from './views/Volunteers.vue';
 import Projects from './views/Projects.vue';
+
+import Analytics from './views/Analytics.vue';  
 import ToastComponent from './components/ToastComponent.vue';
 export default {
   components: {
     HeaderComponent,SidebarComponent, Donations,Home,ToastComponent
-    ,FooterComponent,Projects
-    
+    ,FooterComponent,Projects,Analytics
+
+
   }
   ,
 
